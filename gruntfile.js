@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         uglify: {
             // doesnt need to be called build, we can call it whatever we want 
             build: {
-                src: ['js/vendor/covervid/covervid.js', 'js/main.js'],
+                src: ['js/vendor/jquery.backgroundvideo.js', 'js/main.js'],
                 dest: 'js/script.min.js'
             },
 
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     compress: false,
                     preserveComments: 'all'
                 },
-                src: ['js/vendor/covervid/covervid.js', 'js/main.js'],
+                src: ['js/vendor/jquery.backgroundvideo.js', 'js/main.js'],
                 dest: 'js/script.min.js'
             }   
         },
