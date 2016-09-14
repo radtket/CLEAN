@@ -27,6 +27,20 @@
       });
 /*    }*/
 
+    if (!($("html").hasClass("mobile"))){
+      var videobackground_1 = new $.backgroundVideo($("#video-background-1"), {
+          align: "centerXY",
+          width: 1280,
+          height: 720,
+          path: "video/",
+          filename: "LastNightOut",
+          types: [ "mp4", "ogg", "webm" ],
+          autoplay: true,
+          loop: true
+      });
+    }
+
+
       
    });
 
