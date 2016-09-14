@@ -19,7 +19,7 @@
           width: 1280,
           height: 720,
           path: "video/",
-          filename: "video",
+          filename: "LastNightOut",
 /*        filename: "video-restaurant",*/
           types: [ "mp4", "ogg", "webm" ],
           autoplay: true,
