@@ -1,0 +1,154 @@
+#top {
+	background: $color-white;
+	height: 15px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 9999999999999999;
+}
+
+#bottom {
+	background: $color-white;
+	bottom: 0;
+	height: 15px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	width: auto;
+	z-index: 9999999999999999;
+}
+
+#left {
+	background: $color-white;
+	bottom: 0;
+	height: auto;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 15px;
+	z-index: 9999999999999999;
+}
+
+#right {
+	background: $color-white;
+	bottom: 0;
+	height: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 15px;
+	z-index: 9999999999999999;
+}
+
+.bg-video-wrapper {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+
+	video {
+		height: inherit;
+		max-width: inherit;
+		z-index: 0;
+	}
+}
+
+.bg-video-overlay {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	&::before {
+		background: $color-log-cabin-50;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.home_logo {
+	margin: 10%;
+	max-height: 150px;
+}
+
+.fm-button {
+	background: $color-woodsmoke;
+	border-radius: 50%;
+	display: block;
+	height: 54px;
+	opacity: .85;
+	position: fixed;
+	right: 30px;
+	text-indent: -12345px;
+	top: 30px;
+	transition: opacity 0.27s cubic-bezier(0, 0, 0.58, 1);
+	width: 54px;
+	z-index: 1030;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	span {
+		background: $color-white;
+		display: block;
+		height: 4px;
+		left: 50%;
+		margin: -2px 0 0 -16px;
+		position: absolute;
+		top: 50%;
+		transition: all 0.07s cubic-bezier(0, 0, 0.58, 1);
+		width: 32px;
+
+		&::after,
+		&::before {
+			background: $color-white;
+			content: "";
+			display: block;
+			height: 4px;
+			left: 0;
+			position: absolute;
+			top: -8px;
+			transition: top 0.07s cubic-bezier(0, 0, 0.58, 1), bottom 0.07s cubic-bezier(0, 0, 0.58, 1), transform 0.2s cubic-bezier(0, 0, 0.58, 1) 0.07s;
+			width: 100%;
+		}
+
+		&::after {
+			bottom: -8px;
+			top: auto;
+		}
+	}
+
+	&.active {
+		background: $color-log-cabin;
+		z-index: 2001;
+
+		span {
+
+			transform: rotate(90deg);
+
+			&::before {
+				left: 38%;
+				top: 0;
+				transform: rotate(90deg);
+				width: 69%;
+			}
+
+			&::after {
+				left: 0;
+				top: 0;
+				transform: rotate(50deg);
+				width: 60%;
+			}
+		}
+	}
+}

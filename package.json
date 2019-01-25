@@ -1,20 +1,55 @@
 {
-  "name": "riffa",
+  "name": "riffa__full-bg-video",
   "version": "1.0.0",
   "description": "website for dj riffa",
-  "main": "index.html",
-  "directories": {
-    "doc": "doc"
-  },
+  "main": "docs/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp watch",
+    "build": "gulp"
   },
-  "author": "taylor radtke",
+  "author": "Taylor Radtke",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radtket/riffa__full-bg-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radtket/riffa__full-bg-video/issues"
+  },
+  "homepage": "https://github.com/radtket/riffa__full-bg-video#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^1.2.1"
+    "autoprefixer": "^9.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.8",
+    "del": "^3.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.0",
+    "eslint": "^5.11.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp": "^4.0.0",
+    "prettier": "^1.15.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint": "^9.2.0",
+    "webpack-stream": "^5.2.1",
+    "webpack": "^4.28.4"
   }
 }
